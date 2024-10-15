@@ -1,5 +1,6 @@
 ---
 import "@fontsource-variable/manrope";
+import { Analytics } from "@vercel/analytics/react";
 
 interface Props {
   title: string;
@@ -20,6 +21,7 @@ const { title } = Astro.props;
   </head>
   <body>
     <slot />
+    <Analytics client:load />
   </body>
 </html>
 <style is:global>
