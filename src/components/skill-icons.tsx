@@ -127,13 +127,13 @@ export function SkillIcons() {
       {skills.map(({ name, icon }, index) => (
         <motion.div
           variants={{
-            hidden: { opacity: 0, y: 20 },
+            hidden: { opacity: 0, y: 30 },
             visible: {
               opacity: 1,
               y: 0,
               transition: {
-                duration: 0.2,
-                delay: index * 0.0325,
+                duration: 0.3,
+                delay: index * 0.05,
               },
             },
           }}
